@@ -1,0 +1,272 @@
+miner:
+  storage-limit: 2304
+  material: COBBLESTONE
+  amount-per-cycle: 1
+  sell-price-per-item: 1.0
+  display-name: "<gold>Minero de <yellow><owner>"
+  armor-color:
+    red: 181
+    green: 143
+    blue: 78
+
+production:
+  amount-per-cycle: 1
+  speed-reduction-per-level: 1.0
+  minimum-interval-seconds: 1.0
+  base-interval-seconds:
+    COBBLESTONE: 10.0
+    STONE: 11.0
+    COAL: 12.0
+    COPPER: 14.0
+    IRON: 15.0
+    GOLD: 18.0
+    REDSTONE: 14.0
+    LAPIS: 16.0
+    DIAMOND: 25.0
+    EMERALD: 28.0
+    QUARTZ: 15.0
+    NETHERITE: 45.0
+    OBSIDIAN: 30.0
+    NETHERRACK: 9.0
+    END_STONE: 18.0
+    SAND: 9.0
+    GRAVEL: 10.0
+    CLAY: 12.0
+    DIRT: 8.0
+    OAK: 10.0
+    SPRUCE: 11.0
+    BIRCH: 11.0
+    JUNGLE: 12.0
+    ACACIA: 13.0
+    DARK_OAK: 14.0
+    BAMBOO: 8.0
+    CACTUS: 10.0
+    WHEAT: 10.0
+    CARROT: 10.0
+    POTATO: 10.0
+
+language:
+  default: en
+
+starter-minion: COBBLESTONE
+
+minion-upgrades:
+  max-level: 15
+  base-price: 200.0
+  speed-reduction-per-level: 0.5
+  minimum-interval-seconds: 1.0
+  # 0.05 means every minion level adds 5% to that resource's sale value.
+  value-increase-per-level: 0.05
+
+# Add new sections here to create minions without recompiling the plugin.
+# The shop automatically sorts these definitions by buy-price, cheapest first.
+minions:
+  NETHERITE: {output: NETHERITE_SCRAP, display-material: NETHERITE_BLOCK, tool: NETHERITE_PICKAXE, buy-price: 15000.0, sell-price: 150.0, base-interval-seconds: 45.0, order: 30, armor-color: {red: 55, green: 50, blue: 60}}
+  EMERALD: {output: EMERALD, display-material: EMERALD_BLOCK, tool: DIAMOND_PICKAXE, buy-price: 3500.0, sell-price: 35.0, base-interval-seconds: 28.0, order: 29, armor-color: {red: 25, green: 170, blue: 75}}
+  DIAMOND: {output: DIAMOND, display-material: DIAMOND_BLOCK, tool: DIAMOND_PICKAXE, buy-price: 2500.0, sell-price: 25.0, base-interval-seconds: 25.0, order: 28, armor-color: {red: 45, green: 185, blue: 190}}
+  OBSIDIAN: {output: OBSIDIAN, display-material: OBSIDIAN, tool: DIAMOND_PICKAXE, buy-price: 4500.0, sell-price: 40.0, base-interval-seconds: 30.0, order: 27, armor-color: {red: 55, green: 35, blue: 75}}
+  GOLD: {output: GOLD_INGOT, display-material: GOLD_BLOCK, tool: GOLDEN_PICKAXE, buy-price: 1000.0, sell-price: 10.0, base-interval-seconds: 18.0, order: 26, armor-color: {red: 230, green: 190, blue: 35}}
+  IRON: {output: IRON_INGOT, display-material: IRON_BLOCK, tool: IRON_PICKAXE, buy-price: 500.0, sell-price: 5.0, base-interval-seconds: 15.0, order: 25, armor-color: {red: 200, green: 200, blue: 200}}
+  END_STONE: {output: END_STONE, display-material: END_STONE, tool: IRON_PICKAXE, buy-price: 1200.0, sell-price: 12.0, base-interval-seconds: 18.0, order: 24, armor-color: {red: 210, green: 210, blue: 150}}
+  LAPIS: {output: LAPIS_LAZULI, display-material: LAPIS_BLOCK, tool: IRON_PICKAXE, buy-price: 850.0, sell-price: 7.5, base-interval-seconds: 16.0, order: 23, armor-color: {red: 35, green: 70, blue: 190}}
+  REDSTONE: {output: REDSTONE, display-material: REDSTONE_BLOCK, tool: IRON_PICKAXE, buy-price: 700.0, sell-price: 6.0, base-interval-seconds: 14.0, order: 22, armor-color: {red: 180, green: 25, blue: 25}}
+  QUARTZ: {output: QUARTZ, display-material: QUARTZ_BLOCK, tool: IRON_PICKAXE, buy-price: 650.0, sell-price: 6.0, base-interval-seconds: 15.0, order: 21, armor-color: {red: 225, green: 215, blue: 175}}
+  COPPER: {output: RAW_COPPER, display-material: COPPER_BLOCK, tool: STONE_PICKAXE, buy-price: 400.0, sell-price: 4.0, base-interval-seconds: 14.0, order: 20, armor-color: {red: 191, green: 95, blue: 45}}
+  DARK_OAK: {output: DARK_OAK_LOG, display-material: DARK_OAK_WOOD, tool: DIAMOND_AXE, buy-price: 400.0, sell-price: 3.0, base-interval-seconds: 14.0, order: 19, armor-color: {red: 105, green: 65, blue: 35}}
+  COAL: {output: COAL, display-material: COAL_BLOCK, tool: STONE_PICKAXE, buy-price: 250.0, sell-price: 2.5, base-interval-seconds: 12.0, order: 18, armor-color: {red: 30, green: 30, blue: 30}}
+  CLAY: {output: CLAY_BALL, display-material: CLAY, tool: IRON_SHOVEL, buy-price: 300.0, sell-price: 2.5, base-interval-seconds: 12.0, order: 17, armor-color: {red: 125, green: 155, blue: 175}}
+  ACACIA: {output: ACACIA_LOG, display-material: ACACIA_WOOD, tool: IRON_AXE, buy-price: 320.0, sell-price: 2.25, base-interval-seconds: 13.0, order: 16, armor-color: {red: 191, green: 95, blue: 45}}
+  JUNGLE: {output: JUNGLE_LOG, display-material: JUNGLE_WOOD, tool: IRON_AXE, buy-price: 280.0, sell-price: 2.0, base-interval-seconds: 12.0, order: 15, armor-color: {red: 85, green: 120, blue: 55}}
+  CARROT: {output: CARROT, display-material: ORANGE_CONCRETE, tool: STONE_HOE, buy-price: 240.0, sell-price: 2.0, base-interval-seconds: 10.0, order: 14, armor-color: {red: 191, green: 95, blue: 45}}
+  POTATO: {output: POTATO, display-material: BROWN_CONCRETE, tool: STONE_HOE, buy-price: 240.0, sell-price: 2.0, base-interval-seconds: 10.0, order: 13, armor-color: {red: 105, green: 65, blue: 35}}
+  SPRUCE: {output: SPRUCE_LOG, display-material: SPRUCE_WOOD, tool: STONE_AXE, buy-price: 220.0, sell-price: 1.75, base-interval-seconds: 11.0, order: 12, armor-color: {red: 90, green: 65, blue: 40}}
+  BIRCH: {output: BIRCH_LOG, display-material: BIRCH_WOOD, tool: STONE_AXE, buy-price: 220.0, sell-price: 1.75, base-interval-seconds: 11.0, order: 11, armor-color: {red: 225, green: 215, blue: 175}}
+  WHEAT: {output: WHEAT, display-material: HAY_BLOCK, tool: WOODEN_HOE, buy-price: 200.0, sell-price: 1.75, base-interval-seconds: 10.0, order: 10, armor-color: {red: 175, green: 135, blue: 60}}
+  OAK: {output: OAK_LOG, display-material: OAK_WOOD, tool: WOODEN_AXE, buy-price: 180.0, sell-price: 1.5, base-interval-seconds: 10.0, order: 9, armor-color: {red: 175, green: 135, blue: 60}}
+  CACTUS: {output: CACTUS, display-material: CACTUS, tool: WOODEN_HOE, buy-price: 180.0, sell-price: 1.5, base-interval-seconds: 10.0, order: 8, armor-color: {red: 25, green: 170, blue: 75}}
+  STONE: {output: STONE, display-material: STONE, tool: STONE_PICKAXE, buy-price: 150.0, sell-price: 1.25, base-interval-seconds: 11.0, order: 7, armor-color: {red: 115, green: 115, blue: 115}}
+  GRAVEL: {output: GRAVEL, display-material: GRAVEL, tool: STONE_SHOVEL, buy-price: 140.0, sell-price: 1.2, base-interval-seconds: 10.0, order: 6, armor-color: {red: 115, green: 115, blue: 115}}
+  COBBLESTONE: {output: COBBLESTONE, display-material: COBBLESTONE, tool: WOODEN_PICKAXE, buy-price: 100.0, sell-price: 1.0, base-interval-seconds: 10.0, order: 5, armor-color: {red: 115, green: 115, blue: 115}}
+  NETHERRACK: {output: NETHERRACK, display-material: NETHERRACK, tool: STONE_PICKAXE, buy-price: 120.0, sell-price: 1.0, base-interval-seconds: 9.0, order: 4, armor-color: {red: 75, green: 30, blue: 30}}
+  SAND: {output: SAND, display-material: SANDSTONE, tool: WOODEN_SHOVEL, buy-price: 120.0, sell-price: 1.0, base-interval-seconds: 9.0, order: 3, armor-color: {red: 225, green: 215, blue: 175}}
+  BAMBOO: {output: BAMBOO, display-material: BAMBOO_BLOCK, tool: WOODEN_AXE, buy-price: 100.0, sell-price: 0.8, base-interval-seconds: 8.0, order: 2, armor-color: {red: 115, green: 180, blue: 45}}
+  DIRT: {output: DIRT, display-material: DIRT, tool: WOODEN_SHOVEL, buy-price: 80.0, sell-price: 0.75, base-interval-seconds: 8.0, order: 1, armor-color: {red: 105, green: 65, blue: 35}}
+  SNOW: {output: SNOWBALL, display-material: SNOW_BLOCK, tool: WOODEN_SHOVEL, buy-price: 90.0, sell-price: 0.55, base-interval-seconds: 7.5, order: 31, armor-color: {red: 245, green: 250, blue: 250}}
+  KELP: {output: DRIED_KELP, display-material: DRIED_KELP_BLOCK, tool: WOODEN_HOE, buy-price: 110.0, sell-price: 0.65, base-interval-seconds: 8.0, order: 32, armor-color: {red: 45, green: 105, blue: 55}}
+  SUGAR_CANE: {output: SUGAR_CANE, display-material: LIME_CONCRETE, tool: WOODEN_HOE, buy-price: 130.0, sell-price: 0.70, base-interval-seconds: 8.5, order: 33, armor-color: {red: 115, green: 190, blue: 80}}
+  BEETROOT: {output: BEETROOT, display-material: RED_CONCRETE, tool: WOODEN_HOE, buy-price: 160.0, sell-price: 0.85, base-interval-seconds: 9.0, order: 34, armor-color: {red: 145, green: 35, blue: 45}}
+  PUMPKIN: {output: PUMPKIN, display-material: PUMPKIN, tool: STONE_AXE, buy-price: 190.0, sell-price: 1.05, base-interval-seconds: 10.0, order: 35, armor-color: {red: 220, green: 125, blue: 25}}
+  MELON: {output: MELON_SLICE, display-material: MELON, tool: STONE_AXE, buy-price: 210.0, sell-price: 1.10, base-interval-seconds: 9.5, order: 36, armor-color: {red: 115, green: 175, blue: 55}}
+  MUD: {output: MUD, display-material: MUD, tool: STONE_SHOVEL, buy-price: 230.0, sell-price: 1.15, base-interval-seconds: 9.0, order: 37, armor-color: {red: 70, green: 65, blue: 65}}
+  STRING: {output: STRING, display-material: WHITE_WOOL, tool: WOODEN_SWORD, buy-price: 260.0, sell-price: 1.30, base-interval-seconds: 11.0, order: 38, armor-color: {red: 215, green: 215, blue: 215}}
+  BONE: {output: BONE, display-material: BONE_BLOCK, tool: WOODEN_SWORD, buy-price: 290.0, sell-price: 1.35, base-interval-seconds: 11.5, order: 39, armor-color: {red: 225, green: 220, blue: 190}}
+  GRANITE: {output: GRANITE, display-material: GRANITE, tool: STONE_PICKAXE, buy-price: 310.0, sell-price: 1.40, base-interval-seconds: 10.5, order: 40, armor-color: {red: 150, green: 95, blue: 75}}
+  DIORITE: {output: DIORITE, display-material: DIORITE, tool: STONE_PICKAXE, buy-price: 330.0, sell-price: 1.55, base-interval-seconds: 10.5, order: 41, armor-color: {red: 205, green: 205, blue: 200}}
+  ANDESITE: {output: ANDESITE, display-material: ANDESITE, tool: STONE_PICKAXE, buy-price: 350.0, sell-price: 1.60, base-interval-seconds: 10.5, order: 42, armor-color: {red: 120, green: 125, blue: 125}}
+  TUFF: {output: TUFF, display-material: TUFF, tool: STONE_PICKAXE, buy-price: 370.0, sell-price: 1.65, base-interval-seconds: 11.0, order: 43, armor-color: {red: 95, green: 105, blue: 100}}
+  DEEPSLATE: {output: COBBLED_DEEPSLATE, display-material: DEEPSLATE, tool: IRON_PICKAXE, buy-price: 390.0, sell-price: 1.85, base-interval-seconds: 12.0, order: 44, armor-color: {red: 65, green: 65, blue: 70}}
+  MANGROVE: {output: MANGROVE_LOG, display-material: MANGROVE_WOOD, tool: IRON_AXE, buy-price: 420.0, sell-price: 2.10, base-interval-seconds: 12.0, order: 45, armor-color: {red: 110, green: 45, blue: 40}}
+  CHERRY: {output: CHERRY_LOG, display-material: CHERRY_WOOD, tool: IRON_AXE, buy-price: 450.0, sell-price: 2.20, base-interval-seconds: 12.5, order: 46, armor-color: {red: 225, green: 160, blue: 175}}
+  PALE_OAK: {output: PALE_OAK_LOG, display-material: PALE_OAK_WOOD, tool: IRON_AXE, buy-price: 480.0, sell-price: 2.30, base-interval-seconds: 13.0, order: 47, armor-color: {red: 190, green: 185, blue: 170}}
+  COCOA: {output: COCOA_BEANS, display-material: BROWN_CONCRETE, tool: STONE_HOE, buy-price: 520.0, sell-price: 2.40, base-interval-seconds: 12.0, order: 48, armor-color: {red: 115, green: 65, blue: 35}}
+  CALCITE: {output: CALCITE, display-material: CALCITE, tool: IRON_PICKAXE, buy-price: 560.0, sell-price: 2.70, base-interval-seconds: 13.0, order: 49, armor-color: {red: 220, green: 215, blue: 205}}
+  DRIPSTONE: {output: POINTED_DRIPSTONE, display-material: DRIPSTONE_BLOCK, tool: IRON_PICKAXE, buy-price: 600.0, sell-price: 2.80, base-interval-seconds: 13.5, order: 50, armor-color: {red: 135, green: 90, blue: 70}}
+  NETHER_WART: {output: NETHER_WART, display-material: NETHER_WART_BLOCK, tool: IRON_HOE, buy-price: 680.0, sell-price: 3.20, base-interval-seconds: 14.0, order: 51, armor-color: {red: 125, green: 20, blue: 30}}
+  SOUL_SAND: {output: SOUL_SAND, display-material: SOUL_SAND, tool: IRON_SHOVEL, buy-price: 740.0, sell-price: 3.40, base-interval-seconds: 14.5, order: 52, armor-color: {red: 80, green: 60, blue: 50}}
+  BASALT: {output: BASALT, display-material: POLISHED_BASALT, tool: IRON_PICKAXE, buy-price: 800.0, sell-price: 3.60, base-interval-seconds: 15.0, order: 53, armor-color: {red: 70, green: 70, blue: 75}}
+  BLACKSTONE: {output: BLACKSTONE, display-material: POLISHED_BLACKSTONE, tool: IRON_PICKAXE, buy-price: 900.0, sell-price: 3.80, base-interval-seconds: 15.5, order: 54, armor-color: {red: 45, green: 40, blue: 50}}
+  SLIME: {output: SLIME_BALL, display-material: SLIME_BLOCK, tool: IRON_SWORD, buy-price: 1100.0, sell-price: 4.20, base-interval-seconds: 16.0, order: 55, armor-color: {red: 90, green: 210, blue: 90}}
+  MAGMA: {output: MAGMA_CREAM, display-material: MAGMA_BLOCK, tool: IRON_SWORD, buy-price: 1300.0, sell-price: 4.50, base-interval-seconds: 16.5, order: 56, armor-color: {red: 210, green: 70, blue: 20}}
+  CRIMSON: {output: CRIMSON_STEM, display-material: CRIMSON_HYPHAE, tool: DIAMOND_AXE, buy-price: 1500.0, sell-price: 4.80, base-interval-seconds: 17.0, order: 57, armor-color: {red: 130, green: 35, blue: 65}}
+  WARPED: {output: WARPED_STEM, display-material: WARPED_HYPHAE, tool: DIAMOND_AXE, buy-price: 1700.0, sell-price: 5.20, base-interval-seconds: 17.5, order: 58, armor-color: {red: 35, green: 140, blue: 145}}
+  GLOWSTONE: {output: GLOWSTONE_DUST, display-material: GLOWSTONE, tool: DIAMOND_PICKAXE, buy-price: 1900.0, sell-price: 5.50, base-interval-seconds: 18.0, order: 59, armor-color: {red: 220, green: 165, blue: 65}}
+  GUNPOWDER: {output: GUNPOWDER, display-material: TNT, tool: IRON_SWORD, buy-price: 2200.0, sell-price: 7.00, base-interval-seconds: 19.0, order: 60, armor-color: {red: 80, green: 80, blue: 80}}
+  ICE: {output: ICE, display-material: ICE, tool: DIAMOND_PICKAXE, buy-price: 2600.0, sell-price: 8.00, base-interval-seconds: 20.0, order: 61, armor-color: {red: 120, green: 180, blue: 235}}
+  PACKED_ICE: {output: PACKED_ICE, display-material: PACKED_ICE, tool: DIAMOND_PICKAXE, buy-price: 3000.0, sell-price: 9.00, base-interval-seconds: 21.0, order: 62, armor-color: {red: 80, green: 135, blue: 210}}
+  PRISMARINE: {output: PRISMARINE_SHARD, display-material: PRISMARINE, tool: DIAMOND_PICKAXE, buy-price: 3400.0, sell-price: 11.00, base-interval-seconds: 22.0, order: 63, armor-color: {red: 75, green: 155, blue: 145}}
+  HONEY: {output: HONEY_BOTTLE, display-material: HONEY_BLOCK, tool: DIAMOND_HOE, buy-price: 3800.0, sell-price: 13.00, base-interval-seconds: 23.0, order: 64, armor-color: {red: 225, green: 155, blue: 25}}
+  AMETHYST: {output: AMETHYST_SHARD, display-material: AMETHYST_BLOCK, tool: DIAMOND_PICKAXE, buy-price: 4300.0, sell-price: 15.00, base-interval-seconds: 24.0, order: 65, armor-color: {red: 150, green: 95, blue: 200}}
+  CHORUS: {output: CHORUS_FRUIT, display-material: PURPUR_BLOCK, tool: DIAMOND_AXE, buy-price: 4900.0, sell-price: 18.00, base-interval-seconds: 25.0, order: 66, armor-color: {red: 180, green: 125, blue: 180}}
+  PURPUR: {output: PURPUR_BLOCK, display-material: PURPUR_PILLAR, tool: DIAMOND_PICKAXE, buy-price: 5600.0, sell-price: 22.00, base-interval-seconds: 27.0, order: 67, armor-color: {red: 170, green: 110, blue: 170}}
+  SEA_LANTERN: {output: PRISMARINE_CRYSTALS, display-material: SEA_LANTERN, tool: DIAMOND_PICKAXE, buy-price: 6500.0, sell-price: 30.00, base-interval-seconds: 30.0, order: 68, armor-color: {red: 175, green: 220, blue: 205}}
+  BLUE_ICE: {output: BLUE_ICE, display-material: BLUE_ICE, tool: NETHERITE_PICKAXE, buy-price: 8000.0, sell-price: 50.00, base-interval-seconds: 34.0, order: 69, armor-color: {red: 45, green: 95, blue: 180}}
+  CRYING_OBSIDIAN: {output: CRYING_OBSIDIAN, display-material: CRYING_OBSIDIAN, tool: NETHERITE_PICKAXE, buy-price: 10000.0, sell-price: 75.00, base-interval-seconds: 38.0, order: 70, armor-color: {red: 80, green: 35, blue: 115}}
+  ANCIENT_DEBRIS: {output: ANCIENT_DEBRIS, display-material: ANCIENT_DEBRIS, tool: NETHERITE_PICKAXE, buy-price: 18500.0, sell-price: 190.0, base-interval-seconds: 48.0, order: 71, armor-color: {red: 95, green: 65, blue: 55}}
+  ECHO_SHARD: {output: ECHO_SHARD, display-material: SCULK_CATALYST, tool: NETHERITE_HOE, buy-price: 24000.0, sell-price: 260.0, base-interval-seconds: 52.0, order: 72, armor-color: {red: 25, green: 85, blue: 90}}
+  BLAZE: {output: BLAZE_ROD, display-material: SHROOMLIGHT, tool: NETHERITE_SWORD, buy-price: 32000.0, sell-price: 350.0, base-interval-seconds: 56.0, order: 73, armor-color: {red: 245, green: 135, blue: 25}}
+  ENDER_PEARL: {output: ENDER_PEARL, display-material: END_STONE_BRICKS, tool: NETHERITE_SWORD, buy-price: 45000.0, sell-price: 500.0, base-interval-seconds: 60.0, order: 74, armor-color: {red: 35, green: 130, blue: 125}}
+  GHAST_TEAR: {output: GHAST_TEAR, display-material: WHITE_CONCRETE, tool: NETHERITE_SWORD, buy-price: 60000.0, sell-price: 700.0, base-interval-seconds: 65.0, order: 75, armor-color: {red: 230, green: 230, blue: 235}}
+  NAUTILUS: {output: NAUTILUS_SHELL, display-material: DARK_PRISMARINE, tool: NETHERITE_PICKAXE, buy-price: 85000.0, sell-price: 950.0, base-interval-seconds: 70.0, order: 76, armor-color: {red: 40, green: 115, blue: 125}}
+  SHULKER: {output: SHULKER_SHELL, display-material: PURPLE_SHULKER_BOX, tool: NETHERITE_PICKAXE, buy-price: 120000.0, sell-price: 1400.0, base-interval-seconds: 76.0, order: 77, armor-color: {red: 135, green: 80, blue: 155}}
+  DRAGON_BREATH: {output: DRAGON_BREATH, display-material: DRAGON_EGG, tool: NETHERITE_SWORD, buy-price: 180000.0, sell-price: 2200.0, base-interval-seconds: 82.0, order: 78, armor-color: {red: 95, green: 35, blue: 120}}
+  HEAVY_CORE: {output: HEAVY_CORE, display-material: TRIAL_SPAWNER, tool: MACE, buy-price: 275000.0, sell-price: 3500.0, base-interval-seconds: 90.0, order: 79, armor-color: {red: 65, green: 85, blue: 95}}
+  NETHER_STAR: {output: NETHER_STAR, display-material: BEACON, tool: MACE, buy-price: 500000.0, sell-price: 7000.0, base-interval-seconds: 100.0, order: 80, armor-color: {red: 210, green: 235, blue: 235}}
+
+economy:
+  # Shortens large values everywhere: 12500 -> 12.5K, 1000000000 -> 1B.
+  compact-format: true
+  compact-decimal-places: 2
+  starting-balance: 0.0
+  currency-singular: Coin
+  currency-plural: Coins
+  decimal-places: 2
+
+plots:
+  size: 16
+  road-width: 5
+  # Plot packs automatically use the most square grid possible (25 = 5x5).
+  square-layout: true
+  border-material: POLISHED_ANDESITE
+  ground-material: GRASS_BLOCK
+  foundation-material: DIRT
+  # Multi-floor foundation. Increase floors before generating/resetting plots.
+  floors: 1
+  floor-height: 5
+  floor-material: SMOOTH_STONE
+
+# Minions keep producing even when their Armor Stand is not rendered.
+performance:
+  # Master switch. false restores the original behavior and renders every active minion.
+  enabled: true
+  dynamic-rendering: true
+  render-distance: 32.0
+  # Both limits apply together. With 20 active plots the server still never exceeds the global budget.
+  max-rendered-per-plot: 32
+  max-rendered-global: 256
+  visibility-check-ticks: 40
+  animations-enabled: true
+  animation-interval-ticks: 10
+  animation-batch-size: 64
+  production-check-ticks: 20
+  save-interval-ticks: 600
+
+shop:
+  minion-limit: 3
+  # Slot milestones: 3 -> 4 -> 8 -> 16 -> 32 -> 64 -> 128 -> 256.
+  max-minion-limit: 256
+  max-storage-level: 25
+  max-profit-level: 20
+  max-speed-level: 20
+  minion-limit-upgrade-price: 1000.0
+  storage-upgrade-price: 750.0
+  profit-upgrade-price: 1500.0
+  speed-upgrade-price: 2000.0
+  minion-limit-price-growth: 2.25
+  storage-price-growth: 1.55
+  profit-price-growth: 1.70
+  speed-price-growth: 1.85
+  profit-per-level: 0.10
+  speed-per-level: 0.05
+  minions:
+    COBBLESTONE: {price: 100.0, sell-price: 1.0}
+    STONE: {price: 150.0, sell-price: 1.25}
+    COAL: {price: 250.0, sell-price: 2.5}
+    COPPER: {price: 400.0, sell-price: 4.0}
+    IRON: {price: 500.0, sell-price: 5.0}
+    GOLD: {price: 1000.0, sell-price: 10.0}
+    REDSTONE: {price: 700.0, sell-price: 6.0}
+    LAPIS: {price: 850.0, sell-price: 7.5}
+    DIAMOND: {price: 2500.0, sell-price: 25.0}
+    EMERALD: {price: 3500.0, sell-price: 35.0}
+    QUARTZ: {price: 650.0, sell-price: 6.0}
+    NETHERITE: {price: 15000.0, sell-price: 150.0}
+    OBSIDIAN: {price: 4500.0, sell-price: 40.0}
+    NETHERRACK: {price: 120.0, sell-price: 1.0}
+    END_STONE: {price: 1200.0, sell-price: 12.0}
+    SAND: {price: 120.0, sell-price: 1.0}
+    GRAVEL: {price: 140.0, sell-price: 1.2}
+    CLAY: {price: 300.0, sell-price: 2.5}
+    DIRT: {price: 80.0, sell-price: 0.75}
+    OAK: {price: 180.0, sell-price: 1.5}
+    SPRUCE: {price: 220.0, sell-price: 1.75}
+    BIRCH: {price: 220.0, sell-price: 1.75}
+    JUNGLE: {price: 280.0, sell-price: 2.0}
+    ACACIA: {price: 320.0, sell-price: 2.25}
+    DARK_OAK: {price: 400.0, sell-price: 3.0}
+    BAMBOO: {price: 100.0, sell-price: 0.8}
+    CACTUS: {price: 180.0, sell-price: 1.5}
+    WHEAT: {price: 200.0, sell-price: 1.75}
+    CARROT: {price: 240.0, sell-price: 2.0}
+    POTATO: {price: 240.0, sell-price: 2.0}
+  upgrade-base-price: 200.0
+
+scoreboard:
+  enabled: true
+  update-interval-ticks: 40
+  title: "&6&lTHE TYCOON"
+  footer: "play.yourserver.net"
+  # Maximum 15 lines. Reorder, remove or add any line.
+  # Variables: {player}, {plot}, {money}, {prestige}, {minions}, {max_minions},
+  # {stored}, {profit}, {speed}, {playtime}, {offline_money}, {lifetime_earnings}, {items_sold},
+  # {online}, {max_online}, {footer}, and every {name_label} used below.
+  lines:
+    - "&8&m--------------------"
+    - "&e&l{player}"
+    - ""
+    - "&f{plot_label}: &6#{plot}"
+    - "&f{money_label}: &a${money}"
+    - "&f{prestige_label}: &d{prestige}"
+    - "&f{minions_label}: &b{minions}&7/&b{max_minions}"
+    - ""
+    - "&f{stored_label}: &e{stored}"
+    - "&f{profit_label}: &a+{profit}%"
+    - "&f{speed_label}: &b+{speed}%"
+    - ""
+    - "&7{playtime_label}: &f{playtime}"
+    - "&e{footer}"
+
+progression:
+  offline-production:
+    enabled: true
+    # Offline time has no limit. 0.75 pays 75% of normal connected earnings.
+    money-rate: 0.75
+  prestige:
+    base-cost: 100000.0
+    cost-growth: 2.0
+    profit-bonus-per-level: 0.10
+  missions:
+    1: {required-items: 100, reward: 500.0}
+    2: {required-items: 1000, reward: 5000.0}
+    3: {required-items: 10000, reward: 50000.0}
+    4: {required-items: 100000, reward: 500000.0}
+    5: {required-items: 1000000, reward: 5000000.0}

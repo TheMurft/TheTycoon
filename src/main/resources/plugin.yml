@@ -1,0 +1,37 @@
+name: TheTycoon
+version: '${project.version}'
+main: dev.themurft.thetycoon.TheTycoonPlugin
+api-version: '1.21'
+author: TheMurft
+description: A vanilla-friendly mining tycoon with animated personal miners.
+depend: [WorldEdit, Vault]
+
+commands:
+  tycoon:
+    description: Manage your tycoon and miners.
+    usage: /tycoon <menu|tp|claim|shop|upgrades|sell|offline|missions|prestige|top|info>
+    aliases: [ty]
+  tycoonlang:
+    description: Select a personal or global language.
+    usage: /tycoonlang <language|reset|global language>
+    aliases: [tylang]
+
+permissions:
+  thetycoon.use:
+    description: Allows players to create and use a tycoon.
+    default: true
+  thetycoon.admin:
+    description: Allows administrative commands.
+    default: op
+  thetycoon.build.bypass:
+    description: Allows building anywhere in the tycoon world.
+    default: op
+  thetycoon.money.admin:
+    description: Allows administrators to add, set, or remove money.
+    default: op
+  thetycoon.lang:
+    description: Allows selection of a personal language.
+    default: true
+  thetycoon.lang.global:
+    description: Allows selection of the global language.
+    default: op
